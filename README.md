@@ -1,1 +1,0 @@
-# GA-Student-Homework
