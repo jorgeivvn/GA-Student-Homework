@@ -28,3 +28,10 @@ Answer: git checkout
 Why would you want to use a branch other than the default master?
 Answer: So you can make separate commits and once finished to merge back to master branch.
 --
+
+--
+Give an example for when you would use git merge and give an example for when it would be better to submit a pull request to have your branch merged.
+Answer: Git merge would be used when a conflict occurs in which changes are made to the file at the same time. 
+What command do you use to send all of the work that you've done locally to your remote repository?
+Answer: git push
+--
