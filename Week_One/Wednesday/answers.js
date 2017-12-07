@@ -61,3 +61,41 @@ for (var i = 1; i <= 20; i++) {
      ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
      console.log(ninjaTurtles);
  }
+
+ //Return of the Closets COMMENTS: Couldn't complete, adding variable to multidimensional array and "Dress Us Up"
+ const kristynsCloset = [
+   "left shoe",
+   "cowboy boots",
+   "right sock",
+   "GA hoodie",
+   "green pants",
+   "yellow knit hat",
+   "marshmallow peeps"
+ ];
+
+ // Thom's closet is more complicated. Check out this nested data structure!!
+ const thomsCloset = [
+   [
+     // These are Thom's shirts
+     "grey button-up",
+     "dark grey button-up",
+     "light blue button-up",
+     "blue button-up",
+   ],[
+     // These are Thom's pants
+     "grey jeans",
+     "jeans",
+     "PJs"
+   ],[
+     // Thom's accessories
+     "wool mittens",
+     "wool scarf",
+     "raybans"
+   ]
+ ];
+
+ kristynsCloset.shift();
+
+ var kristynsShoe=("left shoe");
+
+ thomsCloset[2][4] = kristynsShoe
