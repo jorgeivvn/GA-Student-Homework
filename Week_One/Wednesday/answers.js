@@ -53,3 +53,11 @@ for (var i = 1; i <= 20; i++) {
  matt [2] = "Gotham City";
  //4
  kristyn[2] = "Brooklyn";
+
+ //Yell at the Ninja Turtles COMMENTS: Couldn't figure this out fully, had to google for some type of answer. Even then though, couldn't get the code to work the way I want it to.
+
+ var ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+   for(var i = 0; i < ninjaTurtles.length; i++){
+     ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+     console.log(ninjaTurtles);
+ }
