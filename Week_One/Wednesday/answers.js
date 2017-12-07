@@ -26,3 +26,16 @@ for (var i = 1; i <= 20; i++) {
      console.log(catSays[Math.floor(Math.random() * catSays.length)])
    }
  }
+
+ //Fizz Buzz COMMENTS: Couldn't get it to log "FizzBuzz".
+ for (var i = 0; i <= 100; i++) {
+   if (i%3 === 0)
+     console.log("Fizz");
+   else if (i%5 === 0)
+     console.log("Buzz");
+   else if ((i%3 === 0) && (i%5 === 0))
+     console.log("FizzBuzz");
+   else
+   console.log(i);
+ }
+ 
