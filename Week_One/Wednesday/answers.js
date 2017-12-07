@@ -13,3 +13,16 @@ for (var i = 0; i <= 200; i++) {
   console.log(i);
   }
 }
+
+// Excited Kitten COMMENTS: Got the first part, not the second part. FAILED MISERABLY.
+
+for (var i = 1; i <= 20; i++) {
+  console.log("Love me, pet me! HSSSSSS!");
+}
+
+ const catSays = ["...human...why you taking pictures of me?..", "..the catnip made me do it..", "why does the red dot always get away..."];
+ for (var i = 0; i <= catSays.length; i++) {
+     if(i%2 === 0) {
+     console.log(catSays[Math.floor(Math.random() * catSays.length)])
+   }
+ }
