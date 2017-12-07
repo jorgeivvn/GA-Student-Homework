@@ -38,4 +38,18 @@ for (var i = 1; i <= 20; i++) {
    else
    console.log(i);
  }
- 
+
+ //Getting to Know You
+ const thom = ["Thom", 1000, "Christchurch"]
+ const karolin = ["Karolin", 16, "New York"]
+ const kristyn = ["Kristyn", 5, "Pittsburgh"]
+ const matt = ["Matt H", 186, "Philadelphia"]
+
+ //1.
+ thom[0] = "Gameboy";
+ //2.
+ karolin[1] = 17;
+ //3
+ matt [2] = "Gotham City";
+ //4
+ kristyn[2] = "Brooklyn";
