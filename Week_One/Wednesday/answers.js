@@ -109,3 +109,14 @@ for (var i = 1; i <= 20; i++) {
  // Inventory COMMENT: Didn't finish.
  //
  // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+
+
+//  Multiples of 3 and 5 COMMENTS: 
+//
+// Yes, you might have tackled this earlier, but try it again (don't look back at your other code)
+//
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+//
+// Find the sum of all the multiples of 3 or 5 below 1000.
+//
+// You just solved Project Euler problem 1!
