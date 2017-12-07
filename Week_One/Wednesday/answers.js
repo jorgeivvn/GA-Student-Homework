@@ -99,3 +99,13 @@ for (var i = 1; i <= 20; i++) {
  var kristynsShoe=("left shoe");
 
  thomsCloset[2][4] = kristynsShoe
+
+ // Dirty Laundry
+
+ for (var i = 0; i < kristynsCloset.length; i++) {
+   console.log("Whirr now washing " + kristynsCloset[i]);
+ }
+
+ // Inventory COMMENT: Didn't finish.
+ //
+ // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
