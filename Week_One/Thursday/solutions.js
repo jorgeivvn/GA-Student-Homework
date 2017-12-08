@@ -47,3 +47,19 @@ const sumArray = (array) => {
 }
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+//Got this far on this problem, couldn't figure out the rest...
+const checkPrime = (num) => {
+  for (var i = 2; i < num; i++) {
+  if (num%i == 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(checkPrime(5));
+
+//step 2 of checkPrime/printPrime
+
+//
