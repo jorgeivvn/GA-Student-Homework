@@ -27,3 +27,12 @@ const sumDigits = (num) => {
 console.log(sumDigits(42));
 
 //Commit 3 - Digit Sum
+
+const calculateSide = (sideA, sideB) => {
+  let pyth = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+  return pyth
+}
+
+console.log(calculateSide(8,6));
+
+//Commit 4 - Pythagoras
