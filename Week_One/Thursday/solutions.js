@@ -63,3 +63,6 @@ console.log(checkPrime(5));
 //step 2 of checkPrime/printPrime
 
 //
+const insertDash = (num) => {
+
+}
