@@ -15,3 +15,15 @@ const checkPalindrome = (word) => {
 console.log(checkPalindrome("racecar"));
 
 //Commit 2 - Palindrome
+const sumDigits = (num) => {
+  let sum = 0;
+  let add = num.toString().split('');
+  for (var i = 0; i < add.length; i++) {
+    sum += Number(add[i]);
+  }
+  return sum
+}
+
+console.log(sumDigits(42));
+
+//Commit 3 - Digit Sum
