@@ -1,6 +1,3 @@
-
-
-
 // function render(data){
 // let html = "<div class='addComment'><span>"+data.name+"</span><p>"+data.body+"</p></div><div class='clear'></div>";
 //   $('#container').append(html);
@@ -48,12 +45,33 @@ var main = function() {
   });
 
   $('.btn').addClass('disabled');
-}
+ }
+
+ function savePosts() {
+   if(typeof)
+ }
 
 $(document).ready(main);
 
 
 
+
+
+//Couldn't figure out a way to use Local Storage*****
+
+//EXAMPLE OF USING LOCAL STORAGE WITH A CLICK COUNTER
+// function clickCounter() {
+//     if(typeof(Storage) !== "undefined") {
+//         if (localStorage.clickcount) {
+//             localStorage.clickcount = Number(localStorage.clickcount)+1;
+//         } else {
+//             localStorage.clickcount = 1;
+//         }
+//         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+//     } else {
+//         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+//     }
+// }
 
 
 
