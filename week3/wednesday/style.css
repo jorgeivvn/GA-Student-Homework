@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 2px black;
+  font-size: 120px;
+  font-family: 'Righteous', cursive;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+ul {
+  font-family: 'Righteous', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+}
