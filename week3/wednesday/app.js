@@ -54,6 +54,86 @@ var main = function() {
 $(document).ready(main);
 
 
+//data: postLength, charactersLeft,
+//functions: 
+
+
+//**************ALEX CODE EXAMPLE//************
+function ColorManager() {
+	this.colors = ["green", "red", "blue", "magenta", "indigo"];
+	this.currentColor = window.localStorage.getItem("color");
+	this.$header = $('h1');
+	this.setColor = () => {
+		let randomNumber = myHelpers.getRandomNumber();
+
+		if (this.currentColor) {
+			this.$header.css("color", this.currentColor);
+		} else {
+			let color = colors[randomNumber];
+			$h1.setAttribute("style", "color:" + color);
+		}
+	}
+}
+
+function Helpers() {
+	this.getRandomNumber = () => {
+		return Math.floor(Math.random() * 5);
+	};
+	this.addToLocalStorage = () => {
+		window.localStorage.setItem("emails", JSON.stringify(myEmailManager.emails));
+	}
+
+	this.addLocalStorageToDom = () => {
+		myEmailManager.emails.forEach(function(email) {
+			myEmailManager.$list.append('<li>').append(email);
+		})
+	}
+}
+
+function EventListener() {
+	this.setEventListeners = () => {
+		this.addClickToH1();
+		this.addSubmitToForm();
+	}
+
+	this.addClickToH1 = () => {
+		myColorManager.$header.click( function(event) {
+			randomNumber = myHelpers.getRandomNumber();
+			let color = myColorManager.colors[randomNumber];
+			myColorManager.$header.css("color", color);
+
+			event.target.setAttribute("style", "color:" + color);
+			window.localStorage.setItem("color", color);
+		});
+	}
+
+	this.addSubmitToForm = () => {
+		myEmailManager.$form.submit(function(event) {
+			event.preventDefault();
+			let emailAddress = event.target.firstElementChild.value;
+			myEmailManager.$list.append('<li>').append(emailAddress);
+			myEmailManager.emails.push(emailAddress);
+			myHelpers.addToLocalStorage();
+		});
+	}
+}
+
+function EmailManager() {
+	this.emails = JSON.parse(localStorage.getItem("emails")) || [];
+	this.$form  = $('form');
+	this.$list  = $('ol');
+}
+
+
+const myColorManager   = new ColorManager();
+const myHelpers        = new Helpers();
+const myEventListeners = new EventListener();
+const myEmailManager   = new EmailManager();
+
+myColorManager.setColor();
+myEventListeners.setEventListeners();
+myHelpers.addLocalStorageToDom();
+Add Comment
 
 
 

@@ -73,6 +73,14 @@ for (var i = 1; i <= 20; i++) {
    "marshmallow peeps"
  ];
 
+//This will add candy corn stash at the end of the list of kristynsCloset
+ kristynsCloset[7] = "candy corn stash";
+
+//These two will add to end of list as well, more common is push method
+kirstynsCloset[kristynsCloset.length] = "candy corn stash";
+
+kristynsCloset.push("camo gear");
+
  // Thom's closet is more complicated. Check out this nested data structure!!
  const thomsCloset = [
    [
@@ -93,7 +101,13 @@ for (var i = 1; i <= 20; i++) {
      "raybans"
    ]
  ];
+//This would return dark grey button-up
+ thomsCloset[0][1];
+//Answers from Alex for problem
+let kristynsShoe = kristynsCloset [0];
+thomsCLoset[2].push.kirstynsShoe);
 
+//These are my answers
  kristynsCloset.shift();
 
  var kristynsShoe=("left shoe");
@@ -111,7 +125,7 @@ for (var i = 1; i <= 20; i++) {
  // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 
 
-//  Multiples of 3 and 5 COMMENTS: 
+//  Multiples of 3 and 5 COMMENTS:
 //
 // Yes, you might have tackled this earlier, but try it again (don't look back at your other code)
 //

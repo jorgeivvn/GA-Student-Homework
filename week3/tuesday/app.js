@@ -1,21 +1,23 @@
-var endpoint = 'https://api.fixer.io/latest?base=USD'
+let endpoint = 'https://api.fixer.io/latest?base=USD'
 
-var amountContainer = document.getElementById('output_amount')
+let amountContainer = document.getElementById('output_amount')
 
-var currencyContainer = document.getElementById('output_currency')
+let currencyContainer = document.getElementById('output_currency')
 
 
 function convertCurrency(event) {
   if ('type' in event.target && event.target.type === 'button') {
     console.log('handle currency conversion here');
-    $.get(endpoint, (response) => {
-      processResponse(response);
+    $.get(endpoint, function(response){
+      let currencyInUSD = //how do i grab this?
     })
   }
 }
 
 document.body.addEventListener('click', convertCurrency);
 
+
+//To dislay the currency: 
 // function renderHTML () {
 //
 // }

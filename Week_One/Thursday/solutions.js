@@ -5,14 +5,24 @@
 
 //Couldn't figure out how to make it work with capital letter
 const checkPalindrome = (word) => {
-  if (word == word.toLowerCase("").split("").reverse().join("")) {
+  let lowerCase = word.toLowerCase()
+  if (lowerCase == word.split("").reverse().join("")) {
     return true
   } else {
     return false
   }
 }
-
-console.log(checkPalindrome("racecar"));
+// THIS WAS DANIEL'S WAY WITH A IF ELSE STATEMENT THAT I TRIED TO DO ABOVE
+// const check Palindrome = (word) => {
+//   const reversed = word.split("").reverse().join("");
+//   if (reversed.toLowerCase() === word.toLowerCase()){
+//     return true
+//     else {
+//       return false
+//     }
+//   }
+// }
+console.log(checkPalindrome("Racecar"));
 
 //Digit Sum
 const sumDigits = (num) => {
@@ -49,9 +59,9 @@ const sumArray = (array) => {
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 //Got this far on this problem, couldn't figure out the rest...
+// went over it with Daniel in class, this is what we came up with, and makes sense now. Was overthinking it. *Re-read instructions on homework. They're might be something missing below.. 
 const checkPrime = (num) => {
-  for (var i = 2; i < num; i++) {
-  if (num%i == 0) {
+  if (num%2 != 0) {
     return true
   } else {
     return false
