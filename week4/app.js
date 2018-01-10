@@ -30,9 +30,9 @@ const athletes = [
   ];
 
   const sneakers = [
-    {id: 1, brand: "ADIDAS", name: "Boost"},
-    {id: 2, brand: "ADIDAS", name: "Yeezy"},
-    {id: 3, brand: "NIKE", name: "Jordan XIII"}
+    {id: 1, brand: "ADIDAS", name: "Human Race"},
+    {id: 2, brand: "ADIDAS", name: "Yeezy Boost"},
+    {id: 3, brand: "NIKE", name: "Air Jordan III"}
   ];
 
 app.get('/sneakers', (request, response) => {
